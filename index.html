@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nerd | Agencia Digital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body class="bg-primaryWhite transition-all">
+    <div
+      id="loader"
+      class="fixed inset-0 flex flex-col items-center justify-center gap-4 bg-black w-screen h-screen z-[9999]"
+    >
+      <lottie-player
+        id="explosion-lottie"
+        src="json/loader.json"
+        speed="1"
+        loop
+        autoplay
+        class="w-full md:w-[80%] h-auto"
+      ></lottie-player>
+    </div>
+
+    <div
+      class="content h-full mx-[25px] md:mx-[50px] lg:mx-[75px] 2xl:mx-[100px] border-r-[1.5px] border-l-[1.5px] border-black bg-primaryWhite overflow-hidden"
+    >
+      <header>
+        <nav
+          class="flex justify-between items-center border-black border-y-[1px] h-[52px] md:h-[85px] 2xl:h-[96px]"
+        >
+          <a
+            href="/"
+            class="transition-hover group cursor-pointer hover:bg-black w-[48px] md:w-[96px] 2xl:w-[126px] flex items-center justify-center h-[52px] md:h-[85px] 2xl:h-[96px] border-r-[1.5px] border-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="65"
+              height="51"
+              viewBox="0 0 65 51"
+              fill="none"
+              class="w-[30px] md:w-[56px] 2xl:w-auto h-auto"
+            >
+              <path
+                d="M54.502 8.12969C49.7635 2.81059 44.0077 0 37.8771 0C31.8134 0 25.9103 2.88939 21.2521 8.12969C19.8734 9.66632 18.6285 11.3211 17.5309 13.081C16.4333 11.3343 15.2018 9.67945 13.8231 8.12969C11.7082 5.75251 9.129 3.70865 6.59911 2.34276V0.372718H0V6.84757H6.59911V5.62615C8.31248 6.72937 10.142 8.28729 11.6546 9.99466C13.2743 11.8202 14.6932 13.8165 15.8979 15.9573C12.953 21.7492 11.4271 28.4473 11.4271 35.7627C11.4271 44.8512 13.8097 50.7219 17.5041 50.7219C21.1986 50.7219 23.5812 44.8512 23.5812 35.7627C23.5812 28.4605 22.0552 21.7492 19.1238 15.9573C20.3285 13.8165 21.7474 11.8202 23.3804 9.99466C27.5434 5.30597 32.5362 2.82372 37.8369 2.82372C43.1109 2.82372 48.1171 5.30597 52.2934 9.99466C58.2366 16.6665 61.3822 25.5711 61.3822 35.7627C61.3822 44.1026 57.2327 47.8982 53.3776 47.8982C49.5226 47.8982 45.373 44.1026 45.373 35.7627C45.373 32.545 45.7077 29.4324 46.3368 26.4642L50.3123 27.8826L49.5895 13.3306L39.5101 24.0345L43.6061 25.4923C42.8833 28.7625 42.4951 32.1904 42.4951 35.7496C42.4951 40.2544 43.6195 44.0632 45.7478 46.7687C47.7021 49.2772 50.4863 50.7088 53.3776 50.7088C58.6114 50.7088 64.2468 46.0332 64.2468 35.7496C64.3137 24.875 60.9137 15.3269 54.502 8.12969ZM20.7568 35.7627C20.7568 44.9169 18.3742 47.8982 17.5443 47.8982C16.7144 47.8982 14.3317 44.9037 14.3317 35.7627C14.3317 29.7476 15.4294 24.1789 17.5443 19.2538C19.6592 24.1658 20.7568 29.7344 20.7568 35.7627Z"
+                class="fill-black group-hover:fill-primaryWhite"
+              />
+            </svg>
+          </a>
+          <div class="flex items-center">
+            <a
+              href="/contactanos.html"
+              class="duration-500 group flex gap-2 md:gap-3 2xl:gap-4 mr-[46px] md:mr-[90px] 2xl:mr-[95px] px-[10px] md:px-[20px] 2xl:px-[40px] justify-center items-center border-l-[1.5px] border-black h-[52px] md:h-[85px] 2xl:h-[96px]"
+            >
+              <img
+                src="img/eyes8.svg"
+                alt="eyes"
+                class="eyes w-[40px] md:w-[60px] 2xl:w-[96px]"
+              />
+              <div
+                class="group-hover:flex flex gap-2 md:gap-3 2xl:gap-4 items-center lg:hidden"
+              >
+                <span
+                  class="text-[12px] md:text-[18px] 2xl:text-[27px] font-manrope font-medium leading-tight"
+                  >Contáctanos</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="37"
+                  viewBox="0 0 35 37"
+                  fill="none"
+                  class="w-[17px] md:w-[24px] 2xl:w-auto"
+                >
+                  <g clip-path="url(#clip0_6343_458)">
+                    <path
+                      d="M31.7349 13.6115C31.3598 13.6115 31.0548 13.9227 31.0548 14.3054V35.6116H1.35829V5.30583H19.824C20.199 5.30583 20.504 4.99642 20.504 4.6119C20.504 4.22738 20.2008 3.91797 19.824 3.91797H0.68002C0.304957 3.91797 0 4.22916 0 4.6119V36.3037C0 36.6864 0.304957 36.9976 0.68002 36.9976H31.7366C32.1117 36.9976 32.4166 36.6864 32.4166 36.3037V14.3037C32.4166 13.9209 32.1117 13.6097 31.7366 13.6097L31.7349 13.6115Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M34.0848 1.58787C34.0586 1.24985 33.7957 0.981575 33.4627 0.952959L22.1705 0.00327849C21.8042 -0.0342795 21.4694 0.255454 21.4379 0.636399C21.4081 1.01913 21.685 1.35358 22.0601 1.38577L31.8292 2.20847L10.4524 24.0565C10.1877 24.3266 10.1877 24.7665 10.4524 25.0366C10.5856 25.1725 10.7591 25.2387 10.9326 25.2387C11.1061 25.2387 11.2814 25.1707 11.4128 25.0348L32.844 3.13132L33.6449 13.2237C33.6747 13.5868 33.9709 13.8604 34.3214 13.8604C34.3407 13.8604 34.3583 13.8604 34.3775 13.8586C34.7508 13.8282 35.0295 13.492 34.9997 13.111L34.0848 1.58787Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6343_458">
+                      <rect width="35" height="37" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+            <div
+              class="fixed right-[25px] md:right-[50px] lg:right-[75px] 2xl:right-[100px] top-[-0.5px] z-[999]"
+            >
+              <button
+                id="menuButton"
+                class="group cursor-pointer bg-black hover:bg-primaryWhite border-black border-[1px] w-[48px] md:h-[85px] 2xl:h-auto h-[52px] md:w-[90px] 2xl:w-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="96"
+                  height="95"
+                  viewBox="0 0 96 95"
+                  fill="none"
+                  class="w-[48px] md:h-[85px] 2xl:h-auto h-[52px] md:w-[90px] 2xl:w-auto"
+                >
+                  <rect
+                    x="30.9531"
+                    y="32.2637"
+                    width="35.5556"
+                    height="5.27778"
+                    rx="2.63889"
+                    fill="white"
+                    class="group-hover:fill-black"
+                  />
+                  <rect
+                    x="30.9531"
+                    y="44.5801"
+                    width="35.5556"
+                    height="5.27778"
+                    rx="2.63889"
+                    fill="white"
+                    class="group-hover:fill-black"
+                  />
+                  <rect
+                    x="30.9531"
+                    y="56.8945"
+                    width="35.5556"
+                    height="5.27778"
+                    rx="2.63889"
+                    fill="white"
+                    class="group-hover:fill-black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="fixed right-[25px] md:right-[50px] lg:right-[75px] 2xl:right-[100px] top-[51px] md:top-[85px] 2xl:top-[95px] z-[999]"
+            >
+              <a
+                href="/contactanos.html"
+                class="duration-500 group eye-contact hidden gap-2 md:gap-3 2xl:gap-4 items-center opacity-0 border-b-[1px] border-[1px] border-black min-w-[48px] md:min-w-[90px] 2xl:min-w-[98px] h-[52px] md:h-[85px] 2xl:h-[95px] hover:px-[15px] justify-center bg-primaryWhite"
+              >
+                <img
+                  src="img/ojo1.svg"
+                  alt=""
+                  class="eyes w-[40px] md:w-[60px] 2xl:w-[86px]"
+                />
+                <div
+                  class="group-hover:flex gap-2 md:gap-3 2xl:gap-4 items-center hidden"
+                >
+                  <span
+                    class="text-[12px] md:text-[18px] 2xl:text-[27px] font-manrope font-medium leading-tight"
+                    >Contáctanos</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="37"
+                    viewBox="0 0 35 37"
+                    fill="none"
+                    class="transition-hover w-[17px] md:w-[24px] 2xl:w-auto"
+                  >
+                    <g clip-path="url(#clip0_6343_458)">
+                      <path
+                        d="M31.7349 13.6115C31.3598 13.6115 31.0548 13.9227 31.0548 14.3054V35.6116H1.35829V5.30583H19.824C20.199 5.30583 20.504 4.99642 20.504 4.6119C20.504 4.22738 20.2008 3.91797 19.824 3.91797H0.68002C0.304957 3.91797 0 4.22916 0 4.6119V36.3037C0 36.6864 0.304957 36.9976 0.68002 36.9976H31.7366C32.1117 36.9976 32.4166 36.6864 32.4166 36.3037V14.3037C32.4166 13.9209 32.1117 13.6097 31.7366 13.6097L31.7349 13.6115Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M34.0848 1.58787C34.0586 1.24985 33.7957 0.981575 33.4627 0.952959L22.1705 0.00327849C21.8042 -0.0342795 21.4694 0.255454 21.4379 0.636399C21.4081 1.01913 21.685 1.35358 22.0601 1.38577L31.8292 2.20847L10.4524 24.0565C10.1877 24.3266 10.1877 24.7665 10.4524 25.0366C10.5856 25.1725 10.7591 25.2387 10.9326 25.2387C11.1061 25.2387 11.2814 25.1707 11.4128 25.0348L32.844 3.13132L33.6449 13.2237C33.6747 13.5868 33.9709 13.8604 34.3214 13.8604C34.3407 13.8604 34.3583 13.8604 34.3775 13.8586C34.7508 13.8282 35.0295 13.492 34.9997 13.111L34.0848 1.58787Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6343_458">
+                        <rect width="35" height="37" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div
+          id="menu"
+          class="fixed z-[9999] h-screen w-full bg-black top-0 left-0 transform translate-x-full transition-transform duration-500 ease-out overflow-auto"
+        >
+          <div class="w-full">
+            <div
+              class="mx-[25px] md:mx-[50px] lg:mx-[75px] 2xl:mx-[100px] flex justify-between items-center h-full border-b-[1.5px] border-primaryWhite"
+            >
+              <a
+                href="/"
+                class="transition-hover group cursor-pointer hover:bg-primaryWhite w-[48px] md:w-[96px] 2xl:w-[126px] flex items-center justify-center h-[52px] md:h-[85px] 2xl:h-[96px] border-x-[1.5px] border-primaryWhite"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="65"
+                  height="51"
+                  viewBox="0 0 65 51"
+                  fill="none"
+                  class="w-[30px] md:w-[56px] 2xl:w-auto h-auto"
+                >
+                  <path
+                    d="M54.502 8.12969C49.7635 2.81059 44.0077 0 37.8771 0C31.8134 0 25.9103 2.88939 21.2521 8.12969C19.8734 9.66632 18.6285 11.3211 17.5309 13.081C16.4333 11.3343 15.2018 9.67945 13.8231 8.12969C11.7082 5.75251 9.129 3.70865 6.59911 2.34276V0.372718H0V6.84757H6.59911V5.62615C8.31248 6.72937 10.142 8.28729 11.6546 9.99466C13.2743 11.8202 14.6932 13.8165 15.8979 15.9573C12.953 21.7492 11.4271 28.4473 11.4271 35.7627C11.4271 44.8512 13.8097 50.7219 17.5041 50.7219C21.1986 50.7219 23.5812 44.8512 23.5812 35.7627C23.5812 28.4605 22.0552 21.7492 19.1238 15.9573C20.3285 13.8165 21.7474 11.8202 23.3804 9.99466C27.5434 5.30597 32.5362 2.82372 37.8369 2.82372C43.1109 2.82372 48.1171 5.30597 52.2934 9.99466C58.2366 16.6665 61.3822 25.5711 61.3822 35.7627C61.3822 44.1026 57.2327 47.8982 53.3776 47.8982C49.5226 47.8982 45.373 44.1026 45.373 35.7627C45.373 32.545 45.7077 29.4324 46.3368 26.4642L50.3123 27.8826L49.5895 13.3306L39.5101 24.0345L43.6061 25.4923C42.8833 28.7625 42.4951 32.1904 42.4951 35.7496C42.4951 40.2544 43.6195 44.0632 45.7478 46.7687C47.7021 49.2772 50.4863 50.7088 53.3776 50.7088C58.6114 50.7088 64.2468 46.0332 64.2468 35.7496C64.3137 24.875 60.9137 15.3269 54.502 8.12969ZM20.7568 35.7627C20.7568 44.9169 18.3742 47.8982 17.5443 47.8982C16.7144 47.8982 14.3317 44.9037 14.3317 35.7627C14.3317 29.7476 15.4294 24.1789 17.5443 19.2538C19.6592 24.1658 20.7568 29.7344 20.7568 35.7627Z"
+                    class="fill-primaryWhite group-hover:fill-black"
+                  />
+                </svg>
+              </a>
+              <button
+                id="closeMenuButton"
+                aria-label="cerrar menú"
+                class="flex items-center justify-center group !cursor-pointer hover:bg-primaryWhite h-[52px] md:h-[85px] 2xl:h-[96px] w-[48px] md:w-[90px] 2xl:w-[95px] border-r-[1.5px] border-l-[1px] border-primaryWhite"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="52"
+                  viewBox="0 0 50 52"
+                  fill="none"
+                  class="w-[30px] md:w-[50px] 2xl:w-[60px] h-auto"
+                >
+                  <line
+                    x1="0.707107"
+                    y1="1.29289"
+                    x2="48.7071"
+                    y2="49.2929"
+                    stroke="#FFFDF8"
+                    stroke-width="2"
+                    class="stroke-primaryWhite group-hover:stroke-black"
+                  />
+                  <line
+                    x1="48.7071"
+                    y1="2.70711"
+                    x2="0.707104"
+                    y2="50.7071"
+                    stroke="#FFFDF8"
+                    stroke-width="2"
+                    class="stroke-primaryWhite group-hover:stroke-black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-col justify-between min-h-fit h-[calc(100vh-150px)] mx-[25px] md:mx-[50px] lg:mx-[75px] 2xl:mx-[100px] border-r-[1.5px] border-l-[1.5px] border-b-[1.5px] border-primaryWhite"
+            >
+              <div>
+                <div class="border-b-[1.5px] border-primaryWhite">
+                  <a
+                    href="/branding.html"
+                    class="py-[10px] leading-tight w-full h-full flex items-center !cursor-pointer px-[32px] md:px-[42px] 2xl:px-[150px] text-primaryWhite text-[25px] md:text-[35px] 2xl:text-[45px] font-epilogue font-normal uppercase hover:bg-primaryWhite hover:text-black hover:italic hover:font-bold"
+                    >Branding</a
+                  >
+                </div>
+                <div class="border-b-[1.5px] border-primaryWhite">
+                  <a
+                    href="/marketing-digital.html"
+                    class="py-[10px] leading-tight w-full h-full flex items-center !cursor-pointer px-[32px] md:px-[42px] 2xl:px-[150px] text-primaryWhite text-[25px] md:text-[35px] 2xl:text-[45px] font-epilogue font-normal uppercase hover:bg-primaryWhite hover:text-black hover:italic hover:font-bold"
+                    >Marketing digital</a
+                  >
+                </div>
+                <div class="border-b-[1.5px] border-primaryWhite">
+                  <a
+                    href="/desarrollo-web.html"
+                    class="py-[10px] leading-tight w-full h-full flex items-center !cursor-pointer px-[32px] md:px-[42px] 2xl:px-[150px] text-primaryWhite text-[25px] md:text-[35px] 2xl:text-[45px] font-epilogue font-normal uppercase hover:bg-primaryWhite hover:text-black hover:italic hover:font-bold"
+                    >Desarrollo Web</a
+                  >
+                </div>
+                <div class="border-b-[1.5px] border-primaryWhite">
+                  <a
+                    href="/campanas-integrales.html"
+                    class="py-[10px] leading-tight w-full h-full flex items-center !cursor-pointer px-[32px] md:px-[42px] 2xl:px-[150px] text-primaryWhite text-[25px] md:text-[35px] 2xl:text-[45px] font-epilogue font-normal uppercase hover:bg-primaryWhite hover:text-black hover:italic hover:font-bold"
+                    >Campañas integrales</a
+                  >
+                </div>
+                <div class="border-b-[1.5px] border-primaryWhite">
+                  <a
+                    href="/video.html"
+                    class="py-[10px] leading-tight w-full h-full flex items-center !cursor-pointer px-[32px] md:px-[42px] 2xl:px-[150px] text-primaryWhite text-[25px] md:text-[35px] 2xl:text-[45px] font-epilogue font-normal uppercase hover:bg-primaryWhite hover:text-black hover:italic hover:font-bold"
+                    >Video</a
+                  >
+                </div>
+              </div>
+              <div
+                class="border-primaryWhite flex justify-between px-4 sm:px-[25px] md:px-[50px] lg:px-0 gap-4 overflow-hidden"
+              >
+                <div
+                  class="lg:w-[70%] pl-0 lg:pl-[75px] 2xl:pl-[150px] pr-0 lg:pr-[50px] order-2 lg:order-1"
+                >
+                  <div
+                    class="flex flex-col lg:flex-row justify-between items-center py-[15px] lg:py-[18px] gap-4 md:gap-5"
+                  >
+                    <a
+                      href="/contactanos.html"
+                      class="relative !cursor-pointer mirror-rotate w-[120px] md:w-[130px] lg:w-[140px] 2xl:w-[165px] h-[135px] md:h-[145px] lg:h-[155px] 2xl:h-[165px] flex items-center justify-center"
+                    >
+                      <img
+                        src="img/txt-footer2.svg"
+                        alt=""
+                        class="absolute rotar w-[120px] md:w-[130px] lg:w-[140px] 2xl:w-[165px] h-[135px] md:h-[145px] lg:h-[155px] 2xl:h-[165px] pointer-events-none"
+                      />
+                      <img
+                        src="https://nerd.pe/wp-content/themes/nerd/img/new_telefono.webp"
+                        class="w-[75px] md:w-[85px] lg:w-[100px] 2xl:w-[110px] hover-cel"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </a>
+                    <div
+                      class="flex flex-row lg:flex-col gap-2 md:gap-4 items-center"
+                    >
+                      <a
+                        href="https://www.facebook.com/NerdMedia"
+                        target="_blank"
+                        class="!cursor-pointer"
+                        ><img
+                          src="img/fb.svg"
+                          alt=""
+                          class="w-[30px] md:w-[35px] 2xl:w-[40px] h-[30px] md:h-[35px] 2xl:h-[40px]"
+                      /></a>
+                      <a
+                        href="https://www.instagram.com/nerd_agencia/?hl=es"
+                        target="_blank"
+                        class="!cursor-pointer"
+                        ><img
+                          src="img/instagram.svg"
+                          alt=""
+                          class="w-[30px] md:w-[35px] 2xl:w-[40px] h-[30px] md:h-[35px] 2xl:h-[40px]"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/company/nerdmedia"
+                        target="_blank"
+                        class="!cursor-pointer"
+                        ><img
+                          src="img/linkin.svg"
+                          alt=""
+                          class="w-[30px] md:w-[35px] 2xl:w-[40px] h-[30px] md:h-[35px] 2xl:h-[40px]"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="lg:w-[30%] lg:border-l-[1.5px] border-primaryWhite order-1 lg:order-2"
+                >
+                  <div
+                    class="flex flex-col gap-4 md:gap-2 text-primaryWhite justify-center items-center h-full"
+                  >
+                    <a
+                      href="/"
+                      class="text-[14px] md:text-[18px] 2xl:text-[20px] font-normal hover:font-bold group flex gap-1 md:gap-3 !cursor-pointer w-[130px] md:w-[197px]"
+                      ><img
+                        src="img/star-hover.svg"
+                        class="rotar w-[15px] md:w-[18px] h-auto 2xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                      />
+                      Inicio</a
+                    >
+                    <a
+                      href="/sobre-nerd.html"
+                      class="text-[14px] md:text-[18px] 2xl:text-[20px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                      ><img
+                        src="img/star-hover.svg"
+                        class="rotar w-[15px] md:w-[18px] h-auto 2xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                      />Sobre NERD</a
+                    >
+                    <a
+                      href="/portafolio.html"
+                      class="text-[14px] md:text-[18px] 2xl:text-[20px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                      ><img
+                        src="img/star-hover.svg"
+                        class="rotar w-[15px] md:w-[18px] h-auto 2xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                      />Portafolio</a
+                    >
+                    <a
+                      href="/contactanos.html"
+                      class="text-[14px] md:text-[18px] 2xl:text-[20px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                      ><img
+                        src="img/star-hover.svg"
+                        class="rotar w-[15px] md:w-[18px] h-auto 2xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                      />Contáctanos</a
+                    >
+                    <a
+                      href="/blog.html"
+                      class="text-[14px] md:text-[18px] 2xl:text-[20px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                      ><img
+                        src="img/star-hover.svg"
+                        class="rotar w-[15px] md:w-[18px] h-auto 2xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                      />Blog</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id="section1" class="scroll-section h-[calc(100dvh-96px)]">
+          <div
+            class="h-full w-full flex items-center justify-center relative min-w-[85%] max-w-fit mx-auto"
+          >
+            <div class="relative mt-[-190px] md:mt-0">
+              <h1
+                class="hover-custom-cursor font-epilogue font-light text-[40px] md:text-[72px] 2xl:text-[125px] leading-[107%] relative group peer"
+              >
+                <span
+                  class="flex items-start md:items-center flex-col md:flex-row gap-2 md:gap-3 2xl:gap-4 justify-start relative transition-all duration-500 ease-in-out group"
+                >
+                  <span
+                    class="text transition-transform duration-500 ease-in-out group-hover:lg:-translate-x-2"
+                    >Power</span
+                  >
+                  <!--nuevo video-->
+                  <video
+                    src="video/1-GIF-HOME.webm"
+                    width="500"
+                    height="300"
+                    class="hover-custom-cursor h-[50px] md:h-[60px] 2xl:h-[115px] object-cover w-0 group-hover:lg:w-[200px] group-hover:md:w-[260px] group-hover:2xl:w-[390px] opacity-0 group-hover:lg:opacity-100 transition-[width,opacity] duration-1000 ease-in-out hidden lg:flex overflow-hidden"
+                    loop
+                    muted
+                    autoplay
+                  ></video>
+                  <!--fin nuevo video-->
+
+                  <div
+                    class="relative block h-[35px] md:h-[50px] 2xl:h-auto w-auto mb-[12px] md:mb-[10px] 2xl:mb-[15px]"
+                  >
+                    <img
+                      src="img/brands.svg"
+                      alt=""
+                      class="transition-transform duration-500 ease-in-out group-hover:lg:translate h-[35px] md:h-[50px] 2xl:h-auto w-auto mb-[12px] md:mb-[10px] 2xl:mb-[15px]"
+                    />
+                    <img
+                      src="https://res.cloudinary.com/dexwdybrg/image/upload/v1728781910/mundo_qu0wts.gif"
+                      alt=""
+                      class="absolute top-[-12px] md:top-[-16px] 2xl:top-[-30px] right-[-12px] md:right-[-16px] 2xl:right-[-30px] w-[12px] md:w-[16px] 2xl:w-[30px] h-auto"
+                    />
+                  </div>
+                </span>
+
+                <span
+                  class="flex items-start md:items-center flex-col md:flex-row gap-2 md:gap-3 2xl:gap-4 justify-start relative transition-all duration-500 ease-in-out group"
+                >
+                  <span
+                    class="leading-0 text transition-transform duration-500 ease-in-out group-hover:lg:-translate-x-2 flex gap-2"
+                  >
+                    Powered <span class="flex md:hidden">By</span>
+                  </span>
+                  <!--nuevo video-->
+                  <video
+                    src="video/2-GIF-HOME.webm"
+                    width="500"
+                    height="300"
+                    class="hover-custom-cursor h-[50px] md:h-[60px] 2xl:h-[115px] object-cover w-0 group-hover:lg:w-[200px] group-hover:md:w-[260px] group-hover:2xl:w-[390px] opacity-0 group-hover:lg:opacity-100 transition-[width,opacity] duration-1000 ease-in-out hidden lg:flex overflow-hidden"
+                    loop
+                    muted
+                    autoplay
+                  ></video>
+                  <!--fin nuevo video-->
+
+                  <div
+                    class="transition-transform duration-500 ease-in-out group-hover:lg:translate w-0 lg:w-[150px] 2xl:w-[270px] h-auto mb-[12px] md:mb-[10px] 2xl:mb-[15px] hidden lg:flex opacity-0"
+                  ></div>
+                </span>
+
+                <span
+                  class="flex gap-2 md:gap-3 2xl:gap-4 items-center transition-transform duration-500 ease-in-out group-hover:xl:-translate6 group-hover:lg:-translate-x-2"
+                >
+                  <span
+                    class="hidden md:flex leading-none md:mt-[15px] 2xl:mt-[25px]"
+                    >By</span
+                  >
+                  <img
+                    src="img/nerd.svg"
+                    alt="Nerd Logo"
+                    class="h-[45px] md:h-[55px] 2xl:h-[100px] w-auto mt-[8px] md:mt-0"
+                  />
+                </span>
+              </h1>
+
+              <h2
+                class="text-[14px] 2xl:text-[16px] absolute bottom-[-120px] md:bottom-0 md:top-[72px] lg:top-[78px] 2xl:top-[150px] left-0 md:left-auto md:right-[-65px] 2xl:right-[20px] max-w-[210px] md:max-w-[220px] 2xl:max-w-[270px] font-light transition-transform duration-500 ease-in-out group-hover:lg:translate-x-2 leading-tight md:leading-none"
+              >
+                Somos una agencia de
+                <span class="font-bold"
+                  >marketing, branding y diseño comprometida</span
+                >
+                con ayudar a empresas a conectarse con nuevos clientes y hacer
+                crecer sus negocios.
+              </h2>
+            </div>
+
+            <div class="absolute bottom-[10%] right-0 2xl:right-[10%]">
+              <a
+                href="/contactanos.html"
+                class="relative cursor-pointer w-[82px] md:w-[100px] lg:w-[125px] 2xl:w-[150px] h-[82px] md:h-[100px] lg:h-[125px] 2xl:h-[150px] flex items-center justify-center"
+              >
+                <img
+                  src="img/borde.svg"
+                  alt=""
+                  class="rotar absolute w-[82px] md:w-[100px] lg:w-[125px] 2xl:w-[150px] h-[82px] md:h-[100px] lg:h-[125px] 2xl:h-[150px]"
+                />
+                <img
+                  src="img/eyes8.svg"
+                  alt="eyes"
+                  class="eyes w-[40px] md:w-[50px] lg:w-[50px] 2xl:w-[76px]"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="section2" class="nosotros-section h-screen">
+          <div class="div1">
+            <img
+              src="https://nerd.pe/wp-content/themes/nerd/img/nerd.webp"
+              alt=""
+              class="img-nerd w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+            />
+          </div>
+          <div class="div2">
+            <img
+              src="https://nerd.pe/wp-content/themes/nerd/img/nerd2.webp"
+              alt=""
+              class="img-nerd w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+            />
+          </div>
+          <div class="div3">
+            <img
+              src="https://nerd.pe/wp-content/themes/nerd/img/nerd3.webp"
+              alt=""
+              class="img-nerd w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+            />
+          </div>
+          <div class="div4">
+            <img
+              src="https://nerd.pe/wp-content/themes/nerd/img/nerd4.webp"
+              alt=""
+              class="img-nerd w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+            />
+          </div>
+          <div class="div5">
+            <img
+              src="https://nerd.pe/wp-content/themes/nerd/img/nerd5.webp"
+              alt=""
+              class="img-nerd w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+            />
+          </div>
+          <div class="div6">
+            <img
+              src="https://nerd.pe/wp-content/themes/nerd/img/nerd6.webp"
+              alt=""
+              class="img-nerd w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+            />
+          </div>
+          <div
+            class="container-full flex flex-col h-full justify-center items-center"
+          >
+            <div>
+              <div
+                class="flex items-center justify-center relative z-30 2xl:w-[1500px] mb-[10px]"
+              >
+                <h3
+                  class="text-[28px] md:text-[45px] 2xl:text-[112px] italic font-extrabold font-epilogue leading-none"
+                >
+                  Your Business,
+                </h3>
+                <div class="md:w-[250px] lg:w-[350px] 2xl:w-[450px] flex">
+                  <a
+                    href="/sobre-nerd.html"
+                    aria-label="sobre nerd"
+                    class="duration-500 hidden group border-black border-[1px] rounded-[50px] py-[5px] 2xl:py-[10px] px-[10px] md:px-[20px] 2xl:px-[40px] md:flex items-center gap-4 ml-[15px] lg:ml-[25px] 2xl:ml-[45px] h-[33px] lg:h-[36px] 2xl:h-fit"
+                  >
+                    <img
+                      src="https://nerd.pe/wp-content/themes/nerd/img/eyes8.svg"
+                      alt="eyes"
+                      class="eyes w-[25px] md:w-[40px] lg:w-[50px] 2xl:w-[76px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://nerd.pe/wp-content/themes/nerd/img/arrow.svg"
+                      alt=""
+                      class="group-hover:hidden"
+                      loading="lazy"
+                    />
+                    <div
+                      class="group-hover:flex gap-2 md:gap-3 lg:gap-4 items-center hidden"
+                    >
+                      <span
+                        class="text-[12px] md:text-[18px] 2xl:text-[27px] font-manrope font-medium leading-tight"
+                        >Conoce más</span
+                      >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="37"
+                        viewBox="0 0 35 37"
+                        fill="none"
+                        class="transition-hover w-[15px] lg:w-[20px] 2xl:w-auto"
+                      >
+                        <g clip-path="url(#clip0_6343_458)">
+                          <path
+                            d="M31.7349 13.6115C31.3598 13.6115 31.0548 13.9227 31.0548 14.3054V35.6116H1.35829V5.30583H19.824C20.199 5.30583 20.504 4.99642 20.504 4.6119C20.504 4.22738 20.2008 3.91797 19.824 3.91797H0.68002C0.304957 3.91797 0 4.22916 0 4.6119V36.3037C0 36.6864 0.304957 36.9976 0.68002 36.9976H31.7366C32.1117 36.9976 32.4166 36.6864 32.4166 36.3037V14.3037C32.4166 13.9209 32.1117 13.6097 31.7366 13.6097L31.7349 13.6115Z"
+                            fill="black"
+                          />
+                          <path
+                            d="M34.0848 1.58787C34.0586 1.24985 33.7957 0.981575 33.4627 0.952959L22.1705 0.00327849C21.8042 -0.0342795 21.4694 0.255454 21.4379 0.636399C21.4081 1.01913 21.685 1.35358 22.0601 1.38577L31.8292 2.20847L10.4524 24.0565C10.1877 24.3266 10.1877 24.7665 10.4524 25.0366C10.5856 25.1725 10.7591 25.2387 10.9326 25.2387C11.1061 25.2387 11.2814 25.1707 11.4128 25.0348L32.844 3.13132L33.6449 13.2237C33.6747 13.5868 33.9709 13.8604 34.3214 13.8604C34.3407 13.8604 34.3583 13.8604 34.3775 13.8586C34.7508 13.8282 35.0295 13.492 34.9997 13.111L34.0848 1.58787Z"
+                            fill="black"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6343_458">
+                            <rect width="35" height="37" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col md:flex-row gap-4 xl:gap-8 items-center md:items-end mx-auto md:mx-0 relative"
+              >
+                <div
+                  class="relative xl:ml-52 w-[150px] md:w-[200px] lg:w-[250px] 2xl:w-[350px] h-full flex items-center justify-center group order-2 md:order-1"
+                >
+                  <div class="relative bomba-btn">
+                    <img
+                      src="https://nerd.pe/wp-content/themes/nerd/img/bomba.svg"
+                      alt="molotov"
+                      class="w-[120px] 2xl:w-[180px] flex cursor-pointer transition-all duration-500 ease-in-out"
+                      loading="lazy"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="37"
+                      viewBox="0 0 58 37"
+                      fill="none"
+                      class="manchas absolute w-[60px] 2xl:w-[90px] h-auto top-[27%] right-[-35px] md:right-[-30px] 2xl:right-[-50px] pointer-events-none rotate-[-8deg]"
+                    >
+                      <path
+                        d="M7.20128 6.51328C4.87122 7.70951 2.41852 8.90573 1.06954 11.0589C0.0884637 12.4944 -0.156806 14.4084 0.0884638 16.0831C0.333733 17.7578 0.824273 19.4325 1.56008 21.1072C3.27697 24.9351 5.48439 28.6434 8.30499 31.8732C8.79553 32.4713 9.40871 33.0694 10.1445 33.1891C10.3898 30.9162 10.6351 28.6434 10.8803 26.251C11.003 25.4136 11.1256 24.5763 11.7388 24.0978C12.2293 23.7389 12.9651 23.7389 13.5783 23.8585C16.8894 24.0978 20.3232 24.2174 23.6343 24.4566C21.6722 21.8249 19.5874 19.1933 17.6252 16.5616C17.0121 15.7242 16.2763 14.7672 16.3989 13.6906C16.6442 12.2552 18.1158 11.5374 19.4648 11.0589C21.1816 10.3412 22.8985 9.74309 24.6154 9.02535C22.2854 7.58988 19.0969 8.06837 16.8894 6.39366C16.031 5.67593 15.4178 4.71895 15.0499 3.64234C14.9273 3.16386 14.8046 2.44612 14.5594 1.96763C14.1915 1.2499 14.0688 1.48914 13.4557 1.96763C11.6161 3.76197 9.40871 5.19744 7.20128 6.51328Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M28.1721 32.9497C28.0495 34.0263 28.7853 34.8637 29.6437 35.5814C30.2569 36.0599 33.9359 38.2131 33.2001 36.0599C32.8322 34.3852 29.7664 33.0693 28.1721 32.9497Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M36.0209 1.48897C35.7756 1.6086 35.5303 1.84784 35.4077 2.08708C35.2851 2.32633 35.2851 2.6852 35.5303 2.80482C35.7756 2.92444 36.1435 2.80482 36.3888 2.56557C36.634 2.32633 36.7567 2.08708 37.002 1.84784C37.3699 1.48897 39.4547 0.771239 38.7188 0.0535043C38.1057 -0.305363 36.5114 1.24973 36.0209 1.48897Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M45.0952 19.9106C45.3405 20.6284 45.9537 21.2265 46.6895 21.705C47.4253 22.0638 48.1611 22.1835 49.0195 22.4227C50.6138 22.7816 52.208 23.0208 53.8023 23.3797C54.6607 23.4993 57.2361 24.5759 57.8492 23.8582C58.7077 22.9012 55.6418 22.5423 55.0286 22.3031C53.4344 21.8246 51.9628 21.4657 50.3685 21.1069C48.6516 20.6284 46.8121 20.1499 45.0952 19.9106Z"
+                        fill="#43EEED"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="59"
+                      height="49"
+                      viewBox="0 0 59 49"
+                      fill="none"
+                      class="manchas absolute w-[60px] 2xl:w-[90px] h-auto top-[27%] right-[-35px] md:right-[-30px] 2xl:right-[-50px] pointer-events-none rotate-[-8deg]"
+                    >
+                      <path
+                        d="M15.5303 4.6806C15.4303 5.2806 14.4303 6.0806 14.1303 6.4806C13.3303 7.4806 12.4303 9.5806 13.4303 10.7806C13.8303 11.2806 14.6303 11.3806 15.3303 11.4806C18.0303 11.6806 20.7303 11.6806 23.4303 11.7806C23.8303 11.7806 27.9303 11.7806 28.0303 12.2806C28.0303 12.5806 27.5303 12.7806 27.3303 12.8806C26.4303 13.2806 25.4303 13.6806 24.5303 14.0806C22.5303 14.8806 19.8303 15.4806 18.4303 17.3806C17.3303 18.8806 16.9303 21.5806 18.9303 22.5806L23.8303 25.1806C23.8303 25.1806 23.9303 25.5806 23.4303 25.4806C20.9303 25.2806 18.4303 25.1806 15.9303 25.4806C15.1303 25.5806 14.2303 25.6806 13.7303 26.3806C13.4303 26.7806 13.2303 27.2806 13.1303 27.6806C12.8303 29.1806 13.2303 30.7806 13.7303 32.1806C13.9303 32.7806 14.1303 33.2806 14.4303 33.7806C16.8303 38.6806 21.7303 48.2806 21.7303 48.2806C21.7303 48.2806 21.7303 48.5806 21.4303 48.3806C21.1303 48.1806 9.73034 31.0806 4.43034 27.5806C-0.869661 24.0806 -1.16966 15.9806 2.23034 12.2806C5.63034 8.5806 11.7303 4.1806 15.3303 4.3806C15.3303 4.3806 15.5303 4.3806 15.5303 4.6806Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M23.5302 0.680506C23.4302 0.780506 23.2302 0.880506 23.1302 0.980506C23.0302 1.08051 22.9302 1.28051 22.9302 1.48051C22.9302 1.68051 23.0302 1.88051 23.2302 1.88051C23.4302 1.88051 23.6302 1.78051 23.8302 1.68051C24.2302 1.28051 24.6302 0.880506 25.0302 0.380506C25.2302 0.0805061 25.1302 -0.119494 24.7302 0.0805062C24.3302 0.180506 23.9302 0.480506 23.5302 0.680506Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M33.1304 25.0803C33.0304 25.1803 32.9304 25.1803 32.8304 25.2803C32.7304 25.3803 32.6304 25.4803 32.7304 25.6803C32.7304 25.8803 32.9304 26.0803 33.1304 26.1803C33.4304 26.2803 33.6304 26.4803 33.9304 26.4803C34.2304 26.4803 34.5304 26.3803 34.7304 26.1803C34.9304 25.8803 35.0304 25.3803 34.6304 25.1803C34.1304 24.8803 33.5304 24.8803 33.1304 25.0803Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M37.8303 25.1806C37.6303 25.2806 37.5303 25.4806 37.5303 25.7806C37.5303 25.9806 37.7303 26.0806 37.9303 26.1806C38.1303 26.2806 38.3303 26.2806 38.4303 26.1806C38.7303 26.1806 39.5303 25.8806 39.1303 25.3806C38.9303 25.0806 38.2303 24.8806 37.8303 25.1806Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M36.8303 38.1806C36.4303 37.8806 36.0303 37.6806 35.6303 37.5806C35.4303 37.5806 35.2303 37.5806 35.0303 37.5806C34.9303 37.5806 34.8303 37.5806 34.7303 37.6806C34.5303 37.7806 34.5303 37.9806 34.5303 38.1806C34.5303 38.4806 34.6303 38.6806 34.8303 38.8806C35.0303 39.0806 35.2303 39.1806 35.5303 39.2806C36.1303 39.4806 36.8303 39.6806 37.4303 39.7806C37.5303 39.7806 37.6303 39.7806 37.7303 39.7806C38.1303 39.6806 37.8303 39.2806 37.7303 39.0806C37.4303 38.6806 37.1303 38.3806 36.8303 38.1806Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M55.7303 7.2803C52.9303 7.7803 50.0303 8.1803 47.2303 8.6803C47.0303 8.6803 46.8303 8.7803 46.7303 8.8803C46.6303 8.9803 46.5303 9.1803 46.6303 9.3803C46.7303 9.4803 46.8303 9.5803 47.0303 9.5803C48.4303 9.8803 49.8303 9.6803 51.2303 9.3803C52.3303 9.1803 53.5303 8.8803 54.6303 8.5803C55.6303 8.3803 56.6303 8.0803 57.6303 7.8803C58.1303 7.7803 58.3303 7.2803 57.7303 7.1803C57.0303 6.9803 56.3303 7.1803 55.7303 7.2803Z"
+                        fill="#43EEED"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="44"
+                      height="41"
+                      viewBox="0 0 44 41"
+                      fill="none"
+                      class="manchas absolute w-[60px] 2xl:w-[90px] h-auto top-[27%] right-[-35px] md:right-[-30px] 2xl:right-[-50px] pointer-events-none rotate-[-8deg]"
+                    >
+                      <path
+                        d="M11.5304 4.79979C12.3304 4.19979 13.4304 3.69979 14.2304 4.19979C14.9304 4.69979 14.9304 5.79979 15.3304 6.49979C15.7304 7.29979 16.6304 7.89979 17.5304 8.09979C18.4304 8.49979 19.4304 8.49979 20.3304 8.39979C23.9304 8.39979 27.4304 8.29979 31.0304 8.29979C31.7304 8.29979 32.6304 8.29979 33.1304 8.99979C33.5304 9.59979 33.3304 10.4998 32.8304 10.9998C32.3304 11.4998 31.6304 11.7998 30.9304 11.9998C25.7304 13.7998 20.5304 15.4998 15.2304 16.9998C14.6304 17.1998 14.0304 17.3998 13.5304 17.6998C13.0304 18.0998 12.7304 18.6998 12.8304 19.2998C13.0304 20.0998 13.9304 20.4998 14.7304 20.7998L24.9304 24.3998C25.4304 24.5998 25.3304 25.2998 24.8304 25.2998H15.0304C14.6304 25.2998 14.1304 25.2998 13.8304 25.4998C13.1304 25.8998 13.1304 26.7998 13.2304 27.5998C13.4304 29.7998 14.0304 31.8998 14.9304 33.8998C15.1304 34.2998 15.3304 34.6998 15.3304 35.0998C15.3304 35.4998 15.1304 35.9998 14.8304 36.0998C14.5304 36.1998 14.2304 36.1998 13.9304 36.0998C10.0304 35.0998 7.43041 31.6998 5.03041 28.4998C3.03041 25.9998 1.23041 23.2998 0.430412 20.2998C-0.269588 17.7998 -0.169587 14.8998 1.13041 12.5998C1.63041 11.6998 2.43041 11.2998 3.33041 10.6998C4.63041 9.79979 5.93041 8.79979 7.23041 7.89979C8.63041 6.89979 10.1304 5.79979 11.5304 4.79979Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M18.1303 29.3001C17.9303 29.3001 17.8303 29.4001 17.7303 29.5001C17.6303 29.7001 17.6303 29.9001 17.7303 30.1001C17.9303 30.7001 18.6303 31.1001 19.2303 31.3001C19.6303 31.4001 20.2303 31.5001 20.5303 31.1001C20.8303 30.8001 20.8303 30.4001 20.6303 30.1001C20.1303 29.4001 18.8303 29.1001 18.1303 29.3001Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M23.5307 30.6999C23.1307 30.5999 22.6307 30.5999 22.4307 30.8999C22.1307 31.1999 22.2307 31.6999 22.5307 31.9999C22.8307 32.2999 23.1307 32.4999 23.5307 32.7999C23.7307 32.9999 23.9306 33.1999 24.2306 33.2999C24.4306 33.3999 24.7307 33.3999 24.9307 33.3999C25.1307 33.3999 25.4307 33.3999 25.6307 33.2999C25.8307 33.1999 26.0307 32.8999 25.9307 32.6999C25.8307 32.4999 25.5307 32.2999 25.4307 32.0999C25.3307 31.7999 25.4307 31.4999 25.3307 31.2999C24.9307 30.6999 23.9307 30.7999 23.5307 30.6999Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M21.5307 19.0002C21.1307 18.9002 20.6307 18.9002 20.4307 19.2002C20.1307 19.5002 20.2307 20.0002 20.5307 20.3002C20.8307 20.6002 21.1307 20.8002 21.5307 21.1002C21.7307 21.3002 21.9306 21.5002 22.2306 21.6002C22.4306 21.7002 22.7307 21.7002 22.9307 21.7002C23.1307 21.7002 23.4307 21.7002 23.6307 21.6002C23.8307 21.5002 24.0307 21.2002 23.9307 21.0002C23.8307 20.8002 23.5307 20.6002 23.4307 20.4002C23.3307 20.1002 23.4307 19.8002 23.3307 19.6002C22.9307 19.1002 21.9307 19.1002 21.5307 19.0002Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M20.6306 3.09977C20.1306 3.29977 19.7306 3.59977 19.2306 3.89977C18.9306 4.09977 18.6306 4.39977 18.5306 4.69977C18.4306 5.09977 18.7306 5.49977 19.1306 5.69977C19.5306 5.89977 19.9306 5.79977 20.3306 5.69977C20.9306 5.49977 21.4306 5.19977 21.9306 4.79977C22.2306 4.59977 22.4306 4.29977 22.5306 3.99977C22.8306 2.79977 21.4306 2.79977 20.6306 3.09977Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M30.9305 14.2002C30.5305 14.3002 30.2305 14.4002 29.9305 14.6002C29.6305 14.8002 29.5305 15.3002 29.7305 15.6002C30.0305 16.0002 30.5305 15.9002 31.0305 15.8002C34.7305 14.8002 38.4305 13.7002 42.0305 12.2002C42.6305 12.0002 43.6305 11.2002 42.7305 10.6002C42.1305 10.2002 41.5305 11.0002 40.9305 11.2002C38.9305 12.0002 36.7305 12.6002 34.6305 13.3002C33.3305 13.6002 32.1305 13.9002 30.9305 14.2002Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M19.7306 35.2C19.0306 34.6 18.2306 34 17.3306 34C17.2306 34 17.1306 34 17.0306 34.1C16.9306 34.2 16.8306 34.4 16.8306 34.6C16.8306 34.8 16.9306 34.9 17.1306 35C17.9306 36 19.0306 36.7 20.0306 37.4C21.3306 38.3 22.5306 39.1 23.8306 40C23.9306 40.1 24.1306 40.2 24.2306 40.2C24.4306 40.2 24.6306 40.2 24.6306 40C24.7306 39.9 24.6306 39.8 24.6306 39.6C24.5306 39.1 24.2306 38.8 23.8306 38.5C23.3306 38.2 22.9306 37.8 22.4306 37.4C21.6306 36.8 20.7306 36 19.7306 35.2Z"
+                        fill="#43EEED"
+                      />
+                      <path
+                        d="M17.4305 1.2C17.3305 1.3 17.2305 1.4 17.2305 1.6C17.2305 1.7 17.4305 1.8 17.6305 1.7C17.8305 1.6 17.8305 1.5 18.0305 1.4C18.2305 1.1 18.5305 0.9 18.8305 0.7C18.9305 0.6 19.0305 0.6 19.1305 0.4C19.2305 0.2 19.1305 0 18.9305 0C18.7305 0 18.6305 0.2 18.4305 0.3C18.0305 0.6 17.7305 0.9 17.4305 1.2Z"
+                        fill="#43EEED"
+                      />
+                    </svg>
+                  </div>
+                  <div class="absolute top-[50%] left-0">
+                    <div class="relative">
+                      <img
+                        src="https://nerd.pe/wp-content/themes/nerd/img/line.svg"
+                        alt="Line"
+                        class="absolute top-[10px] left-0 lg:left-[10px] xl:left-[0px] 2xl:left-[30px] h-auto w-[38px] max-w-none rotate-[-25deg]"
+                        loading="lazy"
+                      />
+                      <p
+                        class="absolute left-[10px] xl:left-[0px] 2xl:left-[25px] top-[60px] transform rotate-[-25deg] max-w-[70px] 2xl:max-w-[100px] font-manrope text-[16px] 2xl:text-[22px] font-bold leading-tight text-center z-10"
+                      >
+                        Don’t click
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col order-1 md:order-2 w-full">
+                  <h3
+                    class="text-[27px] md:text-[42px] 2xl:text-[105px] italic font-medium font-epilogue leading-none"
+                  >
+                    is our Business!
+                  </h3>
+                  <p
+                    class="mt-[15px] max-w-[215px] md:max-w-[325px] lg:max-w-[450px] 2xl:max-w-[552px] text-[12px] md:text-[14px] 2xl:text-[16px] font-normal font-manrope"
+                  >
+                    Vamos más allá de los "likes" y la primera impresión. Nos
+                    enfocamos en generar un
+                    <span class="font-bold">impacto real y medible</span> para
+                    las empresas con que trabajamos, en contar historias que
+                    resuenen y en construir marcas que generen negocios y nuevos
+                    clientes en los diferentes puntos de comunicación
+                  </p>
+                </div>
+              </div>
+              <div class="flex md:hidden justify-center mt-[40px]">
+                <a
+                  href="/sobre-nerd.html"
+                  aria-label="sobre nerd"
+                  class="border-black border-[1px] rounded-[50px] py-[5px] lg:py-[10px] px-[15px] md:px-[20px] lg:px-[40px] flex items-center gap-2 h-fit"
+                >
+                  <img
+                    src="<?php echo get_template_directory_uri(); ?>/img/eyes4.svg"
+                    alt="eyes"
+                    class="eyes w-[40px] md:w-[50px]"
+                    loading="lazy"
+                  />
+                  <div class="flex gap-2 md:gap-3 lg:gap-4 items-center">
+                    <span
+                      class="text-[14px] md:text-[18px] lg:text-[27px] font-manrope font-medium leading-tight"
+                      >Conoce más</span
+                    >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="35"
+                      height="37"
+                      viewBox="0 0 35 37"
+                      fill="none"
+                      class="transition-hover w-[17px] md:w-[24px] lg:w-auto"
+                    >
+                      <g clip-path="url(#clip0_6343_458)">
+                        <path
+                          d="M31.7349 13.6115C31.3598 13.6115 31.0548 13.9227 31.0548 14.3054V35.6116H1.35829V5.30583H19.824C20.199 5.30583 20.504 4.99642 20.504 4.6119C20.504 4.22738 20.2008 3.91797 19.824 3.91797H0.68002C0.304957 3.91797 0 4.22916 0 4.6119V36.3037C0 36.6864 0.304957 36.9976 0.68002 36.9976H31.7366C32.1117 36.9976 32.4166 36.6864 32.4166 36.3037V14.3037C32.4166 13.9209 32.1117 13.6097 31.7366 13.6097L31.7349 13.6115Z"
+                          fill="black"
+                        />
+                        <path
+                          d="M34.0848 1.58787C34.0586 1.24985 33.7957 0.981575 33.4627 0.952959L22.1705 0.00327849C21.8042 -0.0342795 21.4694 0.255454 21.4379 0.636399C21.4081 1.01913 21.685 1.35358 22.0601 1.38577L31.8292 2.20847L10.4524 24.0565C10.1877 24.3266 10.1877 24.7665 10.4524 25.0366C10.5856 25.1725 10.7591 25.2387 10.9326 25.2387C11.1061 25.2387 11.2814 25.1707 11.4128 25.0348L32.844 3.13132L33.6449 13.2237C33.6747 13.5868 33.9709 13.8604 34.3214 13.8604C34.3407 13.8604 34.3583 13.8604 34.3775 13.8586C34.7508 13.8282 35.0295 13.492 34.9997 13.111L34.0848 1.58787Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_6343_458">
+                          <rect width="35" height="37" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section3" class="">
+          <div class="bg-black overflow-hidden">
+            <div class="marquee-hello">
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-primaryWhite text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¿QUÉ HACEMOS?
+                </p>
+                <img
+                  src="img/copo.svg"
+                  alt=""
+                  class="rotar h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <a
+              href="/branding.html"
+              class="duration-700 px-[25px] md:px-[50px] lg:px-[75px] 2xl:px-[100px] py-[25px] lg:py-[50px] lg:hover:py-[80px] border-b-[1px] border-black cursor-pointer w-full block group"
+            >
+              <div
+                class="flex justify-between items-center group-hover:items-end"
+              >
+                <div class="flex items-start gap-4">
+                  <img
+                    src="img/branding_suli.webp"
+                    alt=""
+                    class="rounded-[30px] w-[30%] h-auto aspect-square 2xl:w-[415px] 2xl:h-[388px] hidden group-hover:xl:flex"
+                  />
+                  <h4
+                    class="font-epilogue text-[20px] md:text-[52px] lg:text-[78px] font-light leading-tight group-hover:font-extrabold"
+                  >
+                    BRANDING
+                  </h4>
+                </div>
+                <div class="flex gap-4 h-full items-center 2xl:items-start">
+                  <img
+                    src="img/arrow-large.svg"
+                    class="xl:mt-[5px] w-[45px] md:w-auto"
+                  />
+                  <p
+                    class="xl:text-[18px] font-normal leading-tight hidden group-hover:xl:flex max-w-[600px]"
+                  >
+                    Nos centramos en el diseño basado en estrategias
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hidden group-hover:xl:flex flex-wrap gap-2 mt-[40px] items-center max-w-[60%]"
+              >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Identidad Visual</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Identidad Verbal</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Diseño de Logotipos</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Packaging</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Merchandising</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Diseño Gráfico</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Brand Guidelines</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Ilustración</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Animación Digital</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Ilustraciones</span
+                >
+              </div>
+            </a>
+            <a
+              href="/marketing-digital.html"
+              class="duration-700 px-[25px] md:px-[50px] lg:px-[75px] 2xl:px-[100px] py-[25px] lg:py-[50px] lg:hover:py-[80px] border-b-[1px] border-black cursor-pointer w-full block group"
+            >
+              <div
+                class="flex justify-between items-center group-hover:items-end"
+              >
+                <div class="flex items-start gap-4">
+                  <img
+                    src="img/home_porta_mascota.webp"
+                    alt=""
+                    class="rounded-[30px] w-[30%] h-auto aspect-square 2xl:w-[415px] 2xl:h-[388px] hidden group-hover:xl:flex"
+                  />
+                  <h4
+                    class="font-epilogue text-[20px] md:text-[52px] lg:text-[78px] font-light leading-tight group-hover:font-extrabold"
+                  >
+                    MARKETING DIGITAL
+                  </h4>
+                </div>
+                <div class="flex gap-4 h-full items-center 2xl:items-start">
+                  <img
+                    src="img/arrow-large.svg"
+                    class="xl:mt-[5px] w-[45px] md:w-auto"
+                  />
+                  <p
+                    class="xl:text-[18px] font-normal leading-tight hidden group-hover:xl:flex max-w-[600px]"
+                  >
+                    Convertimos tu canal digital en un motor de venta para tu
+                    negocio o reputación de marca.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hidden group-hover:xl:flex flex-wrap gap-2 mt-[40px] items-center max-w-[60%]"
+              >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Social Media
+                </span>
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Social Ads</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Estrategias de RRSS</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Emailling</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Reportes y Analitica</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Content Marketing</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Creación de contenido</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  SEM</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  SEO</span
+                >
+              </div>
+            </a>
+            <a
+              href="/desarrollo-web.html"
+              class="duration-700 px-[25px] md:px-[50px] lg:px-[75px] 2xl:px-[100px] py-[25px] lg:py-[50px] lg:hover:py-[80px] border-b-[1px] border-black cursor-pointer w-full block group"
+            >
+              <div
+                class="flex justify-between items-center group-hover:items-end"
+              >
+                <div class="flex items-start gap-4">
+                  <img
+                    src="img/Home_desarrolloweb_yamaha.webp"
+                    alt=""
+                    class="rounded-[30px] w-[30%] h-auto aspect-square 2xl:w-[415px] 2xl:h-[388px] hidden group-hover:xl:flex"
+                  />
+                  <h4
+                    class="font-epilogue text-[20px] md:text-[52px] lg:text-[78px] font-light leading-tight group-hover:font-extrabold"
+                  >
+                    DESARROLLO WEB
+                  </h4>
+                </div>
+                <div class="flex gap-4 h-full items-center 2xl:items-start">
+                  <img
+                    src="img/arrow-large.svg"
+                    class="xl:mt-[5px] w-[45px] md:w-auto"
+                  />
+                  <p
+                    class="xl:text-[18px] font-normal leading-tight hidden group-hover:xl:flex max-w-[600px]"
+                  >
+                    Diseñados y desarrollamos productos digitales centrados en
+                    el usuario y en sus formas de interactuar con un producto o
+                    servicio.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hidden group-hover:xl:flex flex-wrap gap-2 mt-[40px] items-center max-w-[60%]"
+              >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  UI Design
+                </span>
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Dessarrollo
+                </span>
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Páginas web UX Design</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Ecommece</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Gammificatión</span
+                >
+              </div>
+            </a>
+            <a
+              href="/campanas-integrales.html"
+              class="duration-700 px-[25px] md:px-[50px] lg:px-[75px] 2xl:px-[100px] py-[25px] lg:py-[50px] lg:hover:py-[80px] border-b-[1px] border-black cursor-pointer w-full block group"
+            >
+              <div
+                class="flex justify-between items-center group-hover:items-end"
+              >
+                <div class="flex items-start gap-4">
+                  <img
+                    src="img/Home_campañasdigitales_podcast.webp"
+                    alt=""
+                    class="rounded-[30px] w-[30%] h-auto aspect-square 2xl:w-[415px] 2xl:h-[388px] hidden group-hover:xl:flex"
+                  />
+                  <h4
+                    class="font-epilogue text-[20px] md:text-[52px] lg:text-[78px] font-light leading-tight group-hover:font-extrabold"
+                  >
+                    CAMPAÑAS INTEGRALES
+                  </h4>
+                </div>
+                <div class="flex gap-4 h-full items-center 2xl:items-start">
+                  <img
+                    src="img/arrow-large.svg"
+                    class="xl:mt-[5px] w-[45px] md:w-auto"
+                  />
+                  <p
+                    class="xl:text-[18px] font-normal leading-tight hidden group-hover:xl:flex max-w-[600px]"
+                  >
+                    No solo hacemos que se emocionen con tu marca, buscamos
+                    resultados reales y medbles.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hidden group-hover:xl:flex flex-wrap gap-2 mt-[40px] items-center max-w-[60%]"
+              >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  DIGITAL
+                </span>
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  ATL</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  BTL</span
+                >
+              </div>
+            </a>
+            <a
+              href="/video.html"
+              class="duration-700 px-[25px] md:px-[50px] lg:px-[75px] 2xl:px-[100px] py-[25px] lg:py-[50px] lg:hover:py-[80px] cursor-pointer w-full block group"
+            >
+              <div
+                class="flex justify-between items-center group-hover:items-end"
+              >
+                <div class="flex items-start gap-4">
+                  <img
+                    src="img/home_porta_cuento.webp"
+                    alt=""
+                    class="rounded-[30px] w-[30%] h-auto aspect-square 2xl:w-[415px] 2xl:h-[388px] hidden group-hover:xl:flex"
+                  />
+                  <h4
+                    class="font-epilogue text-[20px] md:text-[52px] lg:text-[78px] font-light leading-tight group-hover:font-extrabold"
+                  >
+                    VIDEO
+                  </h4>
+                </div>
+                <div class="flex gap-4 h-full items-center 2xl:items-start">
+                  <img
+                    src="img/arrow-large.svg"
+                    class="xl:mt-[5px] w-[45px] md:w-auto"
+                  />
+                  <p
+                    class="xl:text-[18px] font-normal leading-tight hidden group-hover:xl:flex max-w-[600px]"
+                  >
+                    Impulsamos marcas con videos que hablan más fuerte que las
+                    palabras.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hidden group-hover:xl:flex flex-wrap gap-2 mt-[40px] items-center max-w-[60%]"
+              >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Corporativos
+                </span>
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Corporativos</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Animaciones</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Podcast</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  TikTok</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Eventos</span
+                >
+                <span
+                  class="border-black border-[1px] rounded-[20px] pt-[2px] lg:pt-[5px] lg:pb-[3px] px-[10px] lg:px-[20px] 2xl:px-[30px] text-[12px] font-normal font-epilogue"
+                >
+                  Foodstyling</span
+                >
+              </div>
+            </a>
+          </div>
+        </section>
+        <section id="section4" class="relative">
+          <div
+            class="bg-primaryWhite overflow-hidden border-y-[1px] border-black"
+          >
+            <a href="nerd.pe/portafolio/" class="marquee-hello">
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+              <div
+                class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] 2xl:h-[93px] mr-[10px] md:mr-[36px]"
+              >
+                <p
+                  class="text-dark text-[17px] md:text-[23px] 2xl:text-[36px] font-bold leading-tight font-epilogue italic"
+                >
+                  ¡PORTAFOLIO!
+                </p>
+                <img
+                  src="img/doble-arrow.svg"
+                  alt=""
+                  class="h-[8px] md:h-[17px] 2xl:h-[33px] w-auto"
+                />
+              </div>
+            </a>
+          </div>
+          <a
+            href="/portafolio.html"
+            class="duration-500 hidden absolute top-0 left-0 group bg-black hover:bg-primaryWhite border-black border-r-[1px] border-b-[1px] border-t-[1px] px-[25px] lg:flex items-center gap-8 hover:gap-4 h-[32px] md:h-[62px] 2xl:h-[95px]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="77"
+              height="39"
+              viewBox="0 0 77 39"
+              fill="none"
+              class="w-[40px] md:w-[60px] lg:w-auto"
+            >
+              <g clip-path="url(#clip0_6340_147)">
+                <path
+                  d="M19.7769 0.0625C30.702 0.0625 39.5547 8.73492 39.5547 19.4375C39.5547 30.1401 30.702 38.8125 19.7769 38.8125C8.8519 38.8125 -0.000789642 30.1401 -0.000789642 19.4375C-0.000789642 8.73492 8.8519 0.0625 19.7769 0.0625ZM19.7769 36.2853C29.2617 36.2853 36.975 28.7291 36.975 19.4375C36.975 10.1459 29.2617 2.58967 19.7769 2.58967C10.2922 2.58967 2.57891 10.1459 2.57891 19.4375C2.57891 28.7291 10.2922 36.2853 19.7769 36.2853Z"
+                  fill="#FFFDF8"
+                  class="group-hover:fill-black"
+                />
+                <path
+                  d="M2.5805 18.1738H36.9766V20.701H2.5805V18.1738Z"
+                  fill="#FFFDF8"
+                  class="group-hover:fill-black"
+                />
+                <path
+                  d="M17.0566 19.4375L9.88934 34.6005L17.6285 37.9701L29.2371 35.4429L36.5463 26.5978L37.4922 19.4375H17.0566Z"
+                  fill="#FFFDF8"
+                  class="group-hover:fill-black"
+                />
+                <path
+                  d="M56.7535 0.0625C67.6786 0.0625 76.5312 8.73492 76.5312 19.4375C76.5312 30.1401 67.6786 38.8125 56.7535 38.8125C45.8285 38.8125 36.9758 30.1401 36.9758 19.4375C36.9758 8.73492 45.8285 0.0625 56.7535 0.0625ZM56.7535 36.2853C66.2382 36.2853 73.9515 28.7291 73.9515 19.4375C73.9515 10.1459 66.2382 2.58967 56.7535 2.58967C47.2688 2.58967 39.5555 10.1459 39.5555 19.4375C39.5555 28.7291 47.2688 36.2853 56.7535 36.2853Z"
+                  fill="#FFFDF8"
+                  class="group-hover:fill-black"
+                />
+                <path
+                  d="M39.5571 18.1738H73.9531V20.701H39.5571V18.1738Z"
+                  fill="#FFFDF8"
+                  class="group-hover:fill-black"
+                />
+                <path
+                  d="M54.0332 19.4375L46.8659 34.6005L54.605 37.9701L66.2137 35.4429L73.5229 26.5978L74.4688 19.4375H54.0332Z"
+                  fill="#FFFDF8"
+                  class="group-hover:fill-black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_6340_147">
+                  <rect
+                    width="76.5312"
+                    height="38.75"
+                    fill="white"
+                    class="group-hover:fill-black"
+                    transform="matrix(-1 0 0 1 76.5312 0.0625)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="69"
+              height="29"
+              viewBox="0 0 69 29"
+              fill="none"
+              class="group-hover:hidden"
+            >
+              <path
+                d="M68.5097 13.5886L55.6141 0.314119C55.1723 -0.138709 54.4957 -0.0975427 54.1036 0.409118C53.7087 0.912612 53.7446 1.6916 54.1864 2.14126L65.0028 13.272L1.07142 13.2716C0.48048 13.2716 0 13.8226 0 14.5003C0 15.1779 0.48048 15.7289 1.07142 15.7289L65 15.7293L54.1837 26.86C53.7446 27.3128 53.706 28.0886 54.1008 28.5921C54.3135 28.8613 54.6034 29.0006 54.8989 29.0006C55.1529 29.0006 55.4097 28.8961 55.6141 28.6871L68.5097 15.4158C68.7362 15.1846 68.8659 14.8521 68.8659 14.5038C68.8659 14.1555 68.7362 13.823 68.5097 13.5918V13.5886Z"
+                fill="#FFFDF8"
+              />
+            </svg>
+            <div class="group-hover:flex gap-4 items-center hidden">
+              <span class="text-[27px] font-manrope font-medium leading-tight"
+                >Más del portafolio</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="37"
+                viewBox="0 0 35 37"
+                fill="none"
+                class="transition-hover w-[17px] md:w-[24px] lg:w-auto"
+              >
+                <g clip-path="url(#clip0_6343_458)">
+                  <path
+                    d="M31.7349 13.6115C31.3598 13.6115 31.0548 13.9227 31.0548 14.3054V35.6116H1.35829V5.30583H19.824C20.199 5.30583 20.504 4.99642 20.504 4.6119C20.504 4.22738 20.2008 3.91797 19.824 3.91797H0.68002C0.304957 3.91797 0 4.22916 0 4.6119V36.3037C0 36.6864 0.304957 36.9976 0.68002 36.9976H31.7366C32.1117 36.9976 32.4166 36.6864 32.4166 36.3037V14.3037C32.4166 13.9209 32.1117 13.6097 31.7366 13.6097L31.7349 13.6115Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M34.0848 1.58787C34.0586 1.24985 33.7957 0.981575 33.4627 0.952959L22.1705 0.00327849C21.8042 -0.0342795 21.4694 0.255454 21.4379 0.636399C21.4081 1.01913 21.685 1.35358 22.0601 1.38577L31.8292 2.20847L10.4524 24.0565C10.1877 24.3266 10.1877 24.7665 10.4524 25.0366C10.5856 25.1725 10.7591 25.2387 10.9326 25.2387C11.1061 25.2387 11.2814 25.1707 11.4128 25.0348L32.844 3.13132L33.6449 13.2237C33.6747 13.5868 33.9709 13.8604 34.3214 13.8604C34.3407 13.8604 34.3583 13.8604 34.3775 13.8586C34.7508 13.8282 35.0295 13.492 34.9997 13.111L34.0848 1.58787Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_6343_458">
+                    <rect width="35" height="37" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </a>
+          <div
+            class="max-w-full mx-auto [columns:2_140px] md:[columns:2_300px] lg:[columns:3_200px] 2xl:[columns:3_300px] [column-gap:1rem] relative custom-shadow portfolio-container pt-4"
+          >
+            <a href="/branding-vivahome.html" class="block mb-4"
+              ><img
+                src="img/home_porta_vivahome.webp"
+                alt=""
+                class="rounded-[20px] object-cover aspect-square hover-custom-cursor"
+            /></a>
+            <a href="/branding-oxxo.html" class="block mb-4"
+              ><img
+                src="img/home_porta_oxxo.webp"
+                alt=""
+                class="rounded-[20px] object-cover aspect-square hover-custom-cursor"
+            /></a>
+            <a href="/desarrollo-catedral.html" class="block mb-4"
+              ><img
+                src="img/home_porta_catedral.webp"
+                alt=""
+                class="rounded-[20px] object-cover aspect-square hover-custom-cursor"
+            /></a>
+            <a href="/marketing-mascota.html" class="block mb-4"
+              ><img
+                src="img/home_porta_mascota.webp"
+                alt=""
+                class="rounded-[20px] object-cover aspect-square hover-custom-cursor"
+            /></a>
+            <a href="/marketing-moncler.html" class="block mb-4"
+              ><img
+                src="img/caricia_mockup_el_poder_de_una_caricia_dr_roberto_somocurcio1.webp"
+                alt=""
+                class="rounded-[20px] object-cover aspect-square hover-custom-cursor"
+            /></a>
+            <a href="/marketing-moncler.html" class="block mb-4"
+              ><img
+                src="img/home_porta_monclito.webp"
+                alt=""
+                class="rounded-[20px] object-cover aspect-square hover-custom-cursor"
+            /></a>
+          </div>
+          <div class="flex lg:hidden justify-center my-[30px]">
+            <a
+              href="/portafolio.html"
+              class="border-black border-[1px] rounded-[50px] py-[5px] px-[15px] md:px-[20px] lg:px-[40px] flex items-center gap-2 h-fit"
+            >
+              <img
+                src="img/ojo1.svg"
+                alt=""
+                class="eyes w-[30px] md:w-[50px] lg:w-[86px]"
+              />
+              <div class="flex gap-2 md:gap-3 lg:gap-4 items-center">
+                <span
+                  class="text-[12px] md:text-[18px] lg:text-[27px] font-manrope font-medium leading-tight"
+                  >Más del portafolio</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="37"
+                  viewBox="0 0 35 37"
+                  fill="none"
+                  class="transition-hover w-[17px] md:w-[24px] lg:w-auto"
+                >
+                  <g clip-path="url(#clip0_6343_458)">
+                    <path
+                      d="M31.7349 13.6115C31.3598 13.6115 31.0548 13.9227 31.0548 14.3054V35.6116H1.35829V5.30583H19.824C20.199 5.30583 20.504 4.99642 20.504 4.6119C20.504 4.22738 20.2008 3.91797 19.824 3.91797H0.68002C0.304957 3.91797 0 4.22916 0 4.6119V36.3037C0 36.6864 0.304957 36.9976 0.68002 36.9976H31.7366C32.1117 36.9976 32.4166 36.6864 32.4166 36.3037V14.3037C32.4166 13.9209 32.1117 13.6097 31.7366 13.6097L31.7349 13.6115Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M34.0848 1.58787C34.0586 1.24985 33.7957 0.981575 33.4627 0.952959L22.1705 0.00327849C21.8042 -0.0342795 21.4694 0.255454 21.4379 0.636399C21.4081 1.01913 21.685 1.35358 22.0601 1.38577L31.8292 2.20847L10.4524 24.0565C10.1877 24.3266 10.1877 24.7665 10.4524 25.0366C10.5856 25.1725 10.7591 25.2387 10.9326 25.2387C11.1061 25.2387 11.2814 25.1707 11.4128 25.0348L32.844 3.13132L33.6449 13.2237C33.6747 13.5868 33.9709 13.8604 34.3214 13.8604C34.3407 13.8604 34.3583 13.8604 34.3775 13.8586C34.7508 13.8282 35.0295 13.492 34.9997 13.111L34.0848 1.58787Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6343_458">
+                      <rect width="35" height="37" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section id="section5" class="md:mt-[60px] lg:mt-[120px]">
+          <div class="container-full flex flex-col justify-center items-center">
+            <div>
+              <h3
+                class="text-center font-epilogue font-bold text-[20px] md:text-[32px] lg:text-[48px] leading-none"
+              >
+                RESTRINGIDO: SOLO PARA MARCAS GENIALES
+              </h3>
+            </div>
+          </div>
+          <div
+            class="bg-black overflow-hidden cinta1 md:mt-[60px] lg:mt-[120px]"
+          >
+            <div class="marquee-hello">
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-herbalife.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-mass.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-yamaha.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-vivanda.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-linea1.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-minsur.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-utp.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-rappi.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-open.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-firstQuantum.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="bg-black overflow-hidden cinta2">
+            <div class="marquee-invert">
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-tinka.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-subway.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-plazaVea.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-oxxo.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-rappi.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-herbalife.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-statkraft.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-puntoAzul.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-moncler.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-caricia.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+              <div
+                class="inline-flex items-center h-[30px] md:h-[60px] mx-auto my-auto"
+              >
+                <img
+                  src="https://nerd.pe/wp-content/themes/nerd/img/brand-ñapancha.svg"
+                  class="pl-[60px]"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div
+      id="explosion-overlay"
+      class="hidden fixed inset-0 items-center justify-center"
+    >
+      <!--nuevo video-->
+      <video
+        id="explosion-gif"
+        src="video/EXPLOSION.webm"
+        width="1000"
+        height="1000"
+        class="object-cover"
+        loop
+        muted
+        autoplay
+      ></video>
+      <!--fin nuevo video-->
+    </div>
+    <div id="block-interactions" class="hidden fixed inset-0 z-[999]"></div>
+
+    <footer class="bg-black overflow-hidden">
+      <div class="mx-[25px] md:mx-[50px] lg:mx-[75px] 2xl:mx-[100px]">
+        <div class="pt-[24px] md:pt-[50px] xl:pt-[120px] md:pb-[50px] relative">
+          <span
+            class="font-manrope text-[10px] md:text-[23px] xl:text-[40px] font-normal text-primaryWhite"
+            >NERD®</span
+          >
+          <div class="flex items-center justify-center">
+            <lottie-player
+              id="maquina"
+              src="json/maquina.json"
+              background="transparent"
+              speed="0.6"
+              loop
+              autoplay
+              class="w-[250px] md:w-[525px] xl:w-[990px]"
+            ></lottie-player>
+          </div>
+          <div
+            class="absolute top-[10%] 2xl:top-1/2 2xl:translate-y-[-50%] right-0"
+          >
+            <a
+              href="/contactanos.html"
+              class="relative !cursor-pointer w-[90px] md:w-[165px] lg:w-[192px] xl:w-[225px] h-[100px] md:h-[165px] lg:h-[192px] xl:h-[225px] flex items-center justify-center"
+            >
+              <img
+                src="img/letras-footer.svg"
+                alt=""
+                class="rotar absolute w-[90px] md:w-[165px] lg:w-[192px] xl:w-[225px] h-[100px] md:h-[165px] lg:h-[192px] xl:h-[225px]"
+              />
+              <svg
+                width="159"
+                height="153"
+                viewBox="0 0 159 153"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[50px] md:w-[100px] lg:w-[120px] xl:w-[150px] h-auto"
+              >
+                <g clip-path="url(#clip0_5173_1362)">
+                  <path
+                    d="M56.7414 24.8334C64.0238 20.1498 71.5543 17.7656 78.744 17.7656C82.7397 17.7656 86.6283 18.5016 90.3146 19.9867C100.636 24.147 108.028 33.6525 111.13 46.7545C114.17 59.5969 112.718 74.4176 107.04 88.4866C101.363 102.556 92.1205 114.237 81.0161 121.377C73.8251 126.001 66.2175 128.445 59.0148 128.445C54.9943 128.445 51.1004 127.697 47.4429 126.223C37.1219 122.063 29.7285 112.557 26.6273 99.455C23.5874 86.6126 25.0394 71.7919 30.717 57.7229C36.3946 43.6539 45.6369 31.973 56.7414 24.8321V24.8334ZM93.9604 103.464C97.6636 98.5024 100.771 92.9418 103.195 86.9363C104.835 82.8726 106.12 78.6823 107.016 74.4841L107.087 74.1448L78.7192 64.424L78.8171 65.0635C79.2519 67.9057 78.7139 71.1564 77.3011 74.2192C75.6636 77.7701 73.0612 80.5862 70.161 81.946L69.6256 82.1966L93.7031 103.806L93.9591 103.463L93.9604 103.464ZM72.7256 62.3608L72.7125 62.3543C72.3665 62.1964 71.9787 62.1168 71.5569 62.1168C69.5277 62.1168 66.4499 64.056 64.486 68.3142C63.444 70.5731 63.0092 73.0225 63.2952 75.0361C63.5341 76.7156 64.2614 77.9541 65.2904 78.4343L65.3113 78.4434C65.6613 78.6027 66.053 78.6823 66.4735 78.6823C68.6776 78.6823 71.6757 76.516 73.5365 72.4836C75.7537 67.6786 74.9076 63.3709 72.7256 62.3595V62.3608ZM30.6621 98.501C33.4448 110.256 39.9555 118.737 48.9941 122.38C52.1685 123.66 55.5335 124.293 59.003 124.293C65.4105 124.293 72.1772 122.133 78.7727 117.892C83.1053 115.106 87.1663 111.552 90.8447 107.328L91.0981 107.037L63.2508 82.0439L63.209 82.0217C61.0701 80.8746 59.6063 78.5413 59.1898 75.6182C58.7889 72.7968 59.3321 69.5865 60.7201 66.5785C63.7182 60.081 69.6805 56.5432 74.2925 58.5268L74.32 58.5372L107.82 70.0159L107.885 69.5461C109.343 59.1427 108.353 49.3162 105.024 41.1261C101.608 32.722 95.9856 26.74 88.762 23.8286C85.6137 22.5601 82.2461 21.9168 78.7531 21.9168C72.3299 21.9168 65.4941 24.13 58.9821 28.3177C48.5933 34.9979 39.9202 45.9924 34.5599 59.2745C29.201 72.5554 27.8155 86.4874 30.6595 98.5024L30.6621 98.501Z"
+                    fill="#FFFDF8"
+                  />
+                  <path
+                    d="M18.6299 52.8518C26.1486 34.2219 38.3786 18.7591 53.0675 9.31367C62.665 3.1424 72.5786 0 82.0364 0C87.2766 0 92.3757 0.963078 97.2058 2.91011C110.104 8.10917 119.612 19.8214 123.977 35.891L123.993 35.9432C123.998 35.9627 124.005 35.981 124.01 36.0006L124.024 36.058C124.236 36.8423 124.403 37.4987 124.55 38.1238C124.605 38.3561 124.657 38.5897 124.708 38.8233L124.763 39.0725C127.392 49.3427 131.004 59.0388 135.503 67.9022C138.943 74.679 141.678 78.5261 142.192 79.2282L142.216 79.2582C143.684 80.8933 144.936 82.7451 145.938 84.7639L145.976 84.8409L146.042 84.8944C148.418 86.8088 160.138 97.0294 157.689 110.189C156.341 117.43 153.21 122.575 148.384 125.477C146.268 126.749 143.791 127.591 141.022 127.98L140.733 128.02L140.69 128.309C140.269 131.084 137.838 145.204 131.299 150.519L131.252 150.557L131.219 150.608C130.641 151.486 129.364 152.545 126.56 152.603C126.479 152.605 126.397 152.606 126.313 152.606C124.408 152.606 122.131 152.151 119.899 151.325C117.56 150.459 115.47 149.264 114.013 147.959C111.413 145.631 111.602 143.66 111.947 142.692L111.964 142.645C111.968 142.633 111.976 142.618 111.982 142.602C111.991 142.583 111.999 142.563 112.007 142.543C112.01 142.538 112.015 142.524 112.021 142.508C112.025 142.499 112.029 142.49 112.033 142.481L112.04 142.466C112.213 142.062 112.452 141.702 112.75 141.395L112.777 141.368L112.798 141.335C115.815 136.661 116.624 129.411 116.838 125.506L116.859 125.127L116.482 125.094C112.502 124.745 108.624 124.95 104.956 125.704C99.901 126.743 95.4143 128.81 91.617 131.846C89.3632 133.689 87.035 135.387 84.6924 136.893C75.2176 142.986 65.1996 146.206 55.7248 146.206C50.4507 146.206 45.3463 145.226 40.5541 143.295C27.0039 137.834 17.2927 125.328 13.2095 108.081C9.18769 91.0931 11.1137 71.4779 18.6325 52.8479L18.6299 52.8518ZM146.246 121.929C150.066 119.632 152.476 115.545 153.613 109.433C154.508 104.63 153.035 99.4293 149.354 94.3947L148.535 93.275L148.647 94.6583C149.02 99.2388 148.286 103.967 146.526 108.331C143.937 114.742 139.329 120.013 133.55 123.171L132.463 123.765L133.694 123.903C134.908 124.04 136.07 124.108 137.177 124.108C140.796 124.108 143.836 123.378 146.246 121.929ZM130.417 145.474L130.69 145.085C133.52 141.049 135.51 133.962 136.429 128.675L136.506 128.233L136.057 128.217C132.266 128.085 127.973 127.291 123.298 125.855L123.245 125.838H123.188C122.569 125.829 121.965 125.797 121.39 125.739L120.986 125.699L120.961 126.104C120.784 129 120.206 134.591 118.313 139.498L118.128 139.975L118.638 140.029C120.207 140.192 121.936 140.612 123.638 141.241C126.335 142.239 128.627 143.623 130.088 145.134L130.419 145.476L130.417 145.474ZM115.969 144.138L116.678 144.787C117.191 145.256 118.672 146.454 121.339 147.442C123.758 148.336 125.555 148.465 126.386 148.465C126.47 148.465 126.543 148.465 126.607 148.463L127.571 148.433L126.859 147.782C126.346 147.312 124.865 146.114 122.197 145.126C119.526 144.137 117.623 144.083 116.93 144.107L115.97 144.138H115.969ZM102.716 121.966C109.248 120.38 115.268 120.691 119.168 121.233L119.224 121.241C119.68 121.305 120.12 121.373 120.523 121.443C121.518 121.614 122.529 121.696 123.527 121.698C123.555 121.698 123.579 121.698 123.604 121.698C125.891 121.679 128.062 121.206 130.065 120.292C135.643 117.747 140.241 112.822 142.68 106.78C145.31 100.263 145.243 93.1171 142.5 87.1729L142.489 87.152C142.458 87.0946 142.431 87.0359 142.407 86.9798L142.399 86.9641C141.518 85.1084 140.395 83.4224 139.062 81.9517C139.02 81.906 138.981 81.8577 138.943 81.8081C138.701 81.4884 132.969 73.8255 127.277 59.9275L126.599 58.2727L126.523 60.0593C126.051 71.1673 123.563 82.3719 119.129 93.3585C114.902 103.834 109.249 113.245 102.327 121.332L101.538 122.253L102.718 121.966H102.716ZM17.2431 107.131C21.0077 123.033 29.8362 134.512 42.1028 139.457C46.3857 141.184 50.9639 142.059 55.7078 142.059H55.7104C64.407 142.059 73.652 139.068 82.4478 133.412C84.4469 132.127 86.4487 130.684 88.3996 129.12L88.41 129.111C88.4205 129.102 88.4296 129.094 88.4387 129.085C88.5719 128.974 88.7143 128.862 88.8553 128.75L89.042 128.601C100.179 119.476 109.252 106.754 115.283 91.8069C122.274 74.4832 124.236 56.203 120.807 40.3331L120.803 40.3188C120.502 39.1495 120.231 38.0442 119.974 36.9415L119.97 36.9219C119.967 36.9062 119.964 36.8893 119.961 36.8736L119.954 36.8475C115.915 22.1286 107.285 11.4395 95.6545 6.75199C91.3715 5.02549 86.7934 4.14985 82.0469 4.14985C73.3516 4.14985 64.1053 7.13957 55.3095 12.7967C41.335 21.7828 29.6742 36.5591 22.4741 54.4009C15.274 72.2426 13.4158 90.9691 17.2405 107.13L17.2431 107.131Z"
+                    fill="#FFFDF8"
+                  />
+                  <path
+                    d="M32.018 71.3817C32.8857 71.5876 33.767 71.0805 34.0246 70.2269L36.7453 61.1929L45.1899 65.5009C45.3145 65.5639 45.4465 65.6127 45.5799 65.6444C46.3168 65.8192 47.0859 65.4679 47.4492 64.791C47.815 64.1092 47.6793 63.2951 47.1117 62.7634L33.9485 50.4688C33.7342 50.2691 33.47 50.1272 33.1854 50.0597C32.4205 49.8782 31.6392 50.2414 31.286 50.9435L27.5899 58.2855L15.3363 51.8747C15.211 51.8087 15.079 51.76 14.9418 51.7274C14.5085 51.6246 14.0423 51.7004 13.6616 51.936C13.2775 52.1748 13.009 52.5483 12.907 52.9895L10.3104 64.2043C10.1046 65.0943 10.6575 65.9994 11.5428 66.2215C11.5428 66.2215 32.0116 71.3802 32.0167 71.3814L32.018 71.3817Z"
+                    fill="#FFFDF8"
+                    class="temblar"
+                  />
+                  <path
+                    d="M32.9134 51.2028C32.6924 51.1503 32.4475 51.2491 32.3355 51.472L28.3363 59.4127C28.2271 59.6295 27.9845 59.7356 27.7597 59.6822C27.719 59.6726 27.6783 59.6576 27.64 59.6377L14.7907 52.9152C14.7512 52.8951 14.7105 52.8801 14.6698 52.8705C14.4017 52.8068 14.1174 52.9701 14.0512 53.2548L11.4546 64.4695C11.3914 64.7416 11.5587 65.0146 11.8297 65.083L32.2807 70.2374C32.2807 70.2374 32.2858 70.2386 32.2884 70.2392C32.5526 70.3019 32.82 70.1481 32.8991 69.8879L35.8481 60.0953C35.9288 59.8288 36.201 59.6828 36.4577 59.7437C36.497 59.753 36.5352 59.7674 36.5738 59.786L45.7246 64.4546C45.7676 64.4769 45.8096 64.4922 45.8515 64.5022C46.328 64.6152 46.7084 63.996 46.3086 63.6222L33.1455 51.3276C33.0776 51.2632 32.9973 51.2227 32.9147 51.2031M33.4557 48.9172C33.9385 49.0318 34.3861 49.2721 34.7497 49.6119L47.9116 61.9062C48.8752 62.8055 49.1039 64.1889 48.4829 65.3465C47.8675 66.4921 46.562 67.085 45.308 66.7874C45.0831 66.734 44.8633 66.6537 44.6551 66.5467L37.4639 62.8781L35.1487 70.5652C34.7125 72.0135 33.2173 72.8738 31.746 72.5247L31.7105 72.5163L11.2556 67.3609C9.75363 66.9831 8.81619 65.4476 9.16462 63.9396L11.7613 52.7248C11.9346 51.9773 12.3887 51.342 13.0412 50.9389C13.6847 50.5404 14.4762 50.4117 15.2118 50.5862C15.4431 50.6411 15.6686 50.7255 15.88 50.836L27.076 56.6927L30.2359 50.4172C30.8349 49.2275 32.1592 48.6123 33.4564 48.9201L33.4557 48.9172Z"
+                    fill="black"
+                    class="temblar"
+                  />
+                  <path
+                    d="M56.3142 54.7973C56.796 54.8849 57.2969 54.7359 57.6541 54.3989C58.0126 54.0622 58.1827 53.5865 58.1236 53.0943L56.2572 37.7006C56.1756 37.0252 55.6703 36.4903 55.0009 36.3686C54.7247 36.3184 54.4399 36.3449 54.1776 36.4444L48.5401 38.5882L45.104 27.2583C44.9357 26.7024 44.4753 26.2925 43.9036 26.1885C43.5529 26.1247 43.1875 26.1856 42.8758 26.3598L37.5252 29.3489L34.4475 14.3398C34.4375 14.2929 34.4259 14.247 34.4103 14.2017C34.231 13.6691 33.7769 13.2761 33.2232 13.1754C32.7543 13.0902 32.2701 13.2276 31.9164 13.5453L15.8409 26.9649C15.819 26.9835 15.7968 27.0033 15.7759 27.0234C15.2214 27.5619 15.1518 28.434 15.6153 29.0528C15.6389 29.0836 15.6627 29.1131 15.6894 29.1418L30.9427 45.8009C31.1746 46.0804 31.495 46.2673 31.8534 46.3325C32.226 46.4002 32.6079 46.3291 32.9302 46.133L37.665 43.3477L41.28 48.2334C41.501 48.6383 41.8977 48.9306 42.359 49.0145C42.5915 49.0567 42.8326 49.0449 43.0594 48.98L49.8887 47.4495L55.3924 54.2464C55.6254 54.5341 55.9524 54.7289 56.3134 54.7945L56.3142 54.7973Z"
+                    fill="#FFFDF8"
+                    class="temblar"
+                  />
+                  <path
+                    d="M33.0115 14.3326C32.901 14.3125 32.7814 14.3425 32.6898 14.4306L16.5924 27.8688C16.4602 27.9973 16.4439 28.2039 16.5551 28.3514L31.8351 45.0392C31.8928 45.116 31.9756 45.1642 32.0629 45.1801C32.1503 45.196 32.2435 45.1798 32.3243 45.1295L37.6997 41.9671C37.7808 41.9156 37.8737 41.9006 37.9598 41.9163C38.0831 41.9387 38.1927 42.0223 38.2395 42.1515L42.2903 47.6258C42.3363 47.7522 42.4454 47.8383 42.57 47.861C42.6304 47.872 42.6962 47.868 42.7585 47.8462L50.0789 46.206C50.1413 46.1842 50.2057 46.18 50.2674 46.1912C50.3522 46.2066 50.4303 46.2513 50.4866 46.3213L56.308 53.5102C56.3687 53.5849 56.4461 53.6268 56.5244 53.641C56.7467 53.6814 56.99 53.5042 56.958 53.2344L55.0917 37.8407C55.0715 37.6739 54.9439 37.5512 54.7923 37.5237C54.7293 37.5122 54.6621 37.5172 54.5964 37.5424L48.1491 39.9939C48.0835 40.0191 48.0162 40.0241 47.9533 40.0127C47.8222 39.9889 47.7092 39.8954 47.6678 39.7579L43.9802 27.5997C43.9378 27.4607 43.8232 27.3682 43.6935 27.3446C43.6138 27.3301 43.5267 27.3421 43.4498 27.3852L37.133 30.9149C37.0547 30.959 36.9691 30.97 36.8894 30.9555C36.7635 30.9326 36.6508 30.8444 36.6059 30.7116L33.2976 14.5769C33.2519 14.4413 33.1387 14.3557 33.0154 14.3333M33.4317 12.0215C34.4055 12.1986 35.2074 12.8908 35.5226 13.8288C35.5526 13.9192 35.5783 14.0114 35.5971 14.105L38.3517 27.5406L42.3003 25.3352C42.8498 25.0279 43.4931 24.9207 44.1124 25.0333C45.1196 25.2164 45.9307 25.9382 46.2277 26.918L49.299 37.0422L53.7588 35.3462C54.2221 35.1705 54.7243 35.1238 55.2112 35.2123C56.3906 35.4268 57.2796 36.3696 57.423 37.5589L59.2894 52.9526C59.3928 53.8071 59.0827 54.6659 58.4597 55.2529C57.8319 55.8444 56.9509 56.106 56.103 55.9519C55.4657 55.836 54.8896 55.4939 54.4788 54.9868L49.4348 48.7563L43.3455 50.1215C42.9561 50.2271 42.5468 50.2443 42.1486 50.1718C41.3674 50.0298 40.6915 49.5501 40.2945 48.8798L37.3486 44.8983L33.5309 47.1434C32.9645 47.4848 32.2956 47.6085 31.6417 47.4897C30.9878 47.3708 30.4628 47.0538 30.0573 46.5756L14.8204 29.9354C14.7684 29.8782 14.7195 29.8189 14.6736 29.7575C13.8565 28.6672 13.9781 27.1295 14.9549 26.181C14.9969 26.1396 15.0411 26.1012 15.0852 26.0628L31.1478 12.6554C31.7689 12.1078 32.6123 11.8712 33.4319 12.0202L33.4317 12.0215Z"
+                    fill="black"
+                    class="temblar"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5173_1362">
+                    <rect
+                      width="158.027"
+                      height="152.609"
+                      fill="white"
+                      transform="matrix(-1 0 0 1 158.027 0)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="absolute right-0 top-[28px] xl:relative flex flex-col xl:flex-row justify-between mb-[200px] gap-4 custom-line"
+          >
+            <a
+              href=""
+              class="cursor-pointer bg-primaryWhite text-[10px] md:text-[18px] xl:text-[26px] font-bold font-epilogue border-[1px] border-primaryWhite py-[8px] md:py-[15px] rounded-[50px] hover:bg-black hover:text-primaryWhite z-10 w-[82px] md:w-[170px] xl:w-[270px] flex items-center justify-center"
+              >FACEBOOK</a
+            >
+
+            <a
+              href=""
+              class="cursor-pointer bg-primaryWhite text-[10px] md:text-[18px] xl:text-[26px] font-bold font-epilogue border-[1px] border-primaryWhite py-[8px] md:py-[15px] rounded-[50px] hover:bg-black hover:text-primaryWhite z-10 w-[82px] md:w-[170px] xl:w-[270px] flex items-center justify-center"
+              >INSTAGRAM</a
+            >
+
+            <a
+              href=""
+              class="cursor-pointer bg-primaryWhite text-[10px] md:text-[18px] xl:text-[26px] font-bold font-epilogue border-[1px] border-primaryWhite py-[8px] md:py-[15px] rounded-[50px] hover:bg-black hover:text-primaryWhite z-10 w-[82px] md:w-[170px] xl:w-[270px] flex items-center justify-center"
+              >LINKEDIN</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col xl:flex-row gap-[50px] justify-between h-full"
+        >
+          <div class="flex flex-col justify-between gap-2 xl:gap-12 h-full">
+            <div>
+              <img
+                src="img/red.svg"
+                alt=""
+                class="w-[24px] md:w-[50px] xl:w-[90px] xl:mt-[0]"
+              />
+            </div>
+            <div class="flex flex-col gap-2 text-primaryWhite w-[187px]">
+              <a
+                href="/"
+                class="text-[14px] md:text-[25px] xl:text-[28px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                ><img
+                  src="img/star-hover.svg"
+                  class="rotar w-[15px] md:w-[20px] h-auto xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                />
+                Inicio</a
+              >
+              <a
+                href="/sobre-nerd.html"
+                class="text-[14px] md:text-[25px] xl:text-[28px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                ><img
+                  src="img/star-hover.svg"
+                  class="rotar w-[15px] md:w-[20px] h-auto xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                />Sobre NERD</a
+              >
+              <a
+                href="/portafolio.html"
+                class="text-[14px] md:text-[25px] xl:text-[28px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                ><img
+                  src="img/star-hover.svg"
+                  class="rotar w-[15px] md:w-[20px] h-auto xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                />Portafolio</a
+              >
+              <a
+                href="/contactanos.html"
+                class="text-[14px] md:text-[25px] xl:text-[28px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                ><img
+                  src="img/star-hover.svg"
+                  class="rotar w-[15px] md:w-[20px] h-auto xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                />Contáctanos</a
+              >
+              <a
+                href="/blog.html"
+                class="text-[14px] md:text-[25px] xl:text-[28px] font-normal hover:font-bold flex gap-1 md:gap-3 group !cursor-pointer w-[130px] md:w-[197px]"
+                ><img
+                  src="img/star-hover.svg"
+                  class="rotar w-[15px] md:w-[20px] h-auto xl:w-auto flex lg:hidden group-hover:lg:flex items-center"
+                />Blog</a
+              >
+            </div>
+          </div>
+          <div>
+            <img
+              src="img/proud.svg"
+              alt=""
+              class="h-[45px] md:h-[94px] lg:h-[130px] xl:h-[160px] 2xl:h-auto w-auto mx-auto"
+            />
+            <div
+              class="flex items-center justify-center leading-none gap-4 md:gap-9"
+            >
+              <p
+                class="text-primaryWhite text-[68px] md:text-[135px] lg:text-[190px] xl:text-[240px] 2xl:text-[250px] font-bold leading-none italic mb-[5px] md:mb-[15px] lg:mb-[20px] xl:mb-[28px]"
+              >
+                BE
+              </p>
+              <img
+                src="img/nerd-white.svg"
+                alt="Nerd Logo"
+                class="h-[48px] md:h-[100px] lg:h-[140px] xl:h-[170px] 2xl:h-auto 2xl:ml-[45px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-primaryWhite overflow-hidden mt-[50px] md:mt-[100px] xl:mt-[150px]"
+      >
+        <div class="marquee-hello">
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+          <div
+            class="inline-flex gap-3 md:gap-9 items-center h-[30px] md:h-[60px] xl:h-[93px] mr-[10px] md:mr-[36px]"
+          >
+            <a
+              href="mailto:hola@nerd.pe"
+              class="text-black text-[17px] md:text-[35px] xl:text-[45px] font-medium leading-tight font-epilogue italic cursor-pointer"
+            >
+              hola@nerd.pe
+            </a>
+            <img
+              src="img/mail.svg"
+              alt=""
+              class="h-[8px] md:h-[17px] xl:h-[33px] w-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="py-[15px] md:py-[30px] xl:py-[50px] flex items-center justify-center"
+      >
+        <div
+          class="text-primaryWhite flex gap-1 md:gap-2 items-center font-light font-manrope text-[10px] md:text-[20px] xl:text-[23px] text-center"
+        >
+          Made with
+          <img
+            src="img/love.svg"
+            alt=""
+            class="h-[7px] md:h-[14px] xl:h-auto w-auto"
+          />Todos los derechos reservados
+          <span class="font-bold">© NERD®</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer=""
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
